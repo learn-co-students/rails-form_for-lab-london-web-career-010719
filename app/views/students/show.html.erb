@@ -1,0 +1,10 @@
+<h1><%= @student.to_s %></h1>
+
+<%= link_to 'Edit', edit_student_path(@student) %>
+
+<p>
+  This student is called <%= @student.to_s %>
+</p>
+
+
+<%= link_to "All Student", students_path %>
