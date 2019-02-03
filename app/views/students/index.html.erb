@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index of all Students</title>
+  </head>
+  <body>
+    <p>Index of all Students</p>
+    <%=@students.all.map{|student| student.first_name}.uniq.join(", ") %>
+  </body>
+</html>
